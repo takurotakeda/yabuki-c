@@ -70,7 +70,7 @@ body { width: 100%; height: 100%; margin: 0; }
         var lng = <?php echo $cnt2a; ?>;
         var name = <?php echo $cnt3a; ?>;
         var kazu = <?php echo $kazu; ?>;
-        
+    /*    
 // Geolocation APIに対応している
 if( navigator.geolocation ){
 // 現在位置を取得できる場合の処理
@@ -117,7 +117,7 @@ var optionObj = {
 	"timeout": 8000 ,
 	"maximumAge": 5000 ,} ;
         
-        
+        */
 
        markerData.push({ pos: { lat: 40, lng: 150 }, title: "popup-title2", icon: "", infoWindowOpen: false, infoWindowContent: "<h3>tes</h3><p>piyopiyo</p>" });
        for(var i = 0; i < kazu; i++) {
