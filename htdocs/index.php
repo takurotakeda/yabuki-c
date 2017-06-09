@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 
@@ -24,14 +24,14 @@ $cnt1 = array();
 $cnt2 = array();
 
 foreach ($result as $person) {
-    
+    /*
   echo "<br/><br/>避難所:";
   echo $person['避難所名'];//手抜き
   echo "<br/>緯度:";
   echo $person['緯度'];
   echo "<br/>経度:";
   echo $person['経度'];//手抜き
-
+*/
   //php変数を作りデータベースを入れる
   $cnt1[] = $person['緯度'];
   $cnt2[] = $person['経度'];  

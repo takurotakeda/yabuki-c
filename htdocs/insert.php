@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 //データベース接続設定
 $dbServer = '127.0.0.1';
 $dbUser = $_SERVER['MYSQL_USER'];
