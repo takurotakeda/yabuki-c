@@ -1,12 +1,14 @@
 <?php
 //データベース接続設定
 $dbServer = '127.0.0.1';
-$dbName = 'hinandb';
+$dbUser = $_SERVER['MYSQL_USER'];
+$dbPass = $_SERVER['MYSQL_PASSWORD'];
+$dbName = $_SERVER['MYSQL_DB'];
+# MySQL用のDSN文字列です。
 $dsn = "mysql:host={$dbServer};dbname={$dbName};charset=utf8";
-$dbUser = 'root';
 
 //データベースへの接続
-$db = new PDO($dsn, $dbUser);
+$db = new PDO($dsn, $dbUser, $dbPass);
 //送信データの取得
 $db_name = $_POST['name'];//手抜き
 $db_ido = $_POST['ido'];//手抜き
