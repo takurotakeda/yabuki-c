@@ -60,17 +60,17 @@ body { width: 100%; height: 100%; margin: 0; }
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh-xxyYmMWlyvZElHmfygXIbckJAcW-r8&"></script>
 
 <script type="text/javascript">
-
+var markerData = [];
 (function(){
 	"use strict";
 	var mapData    = { pos: { lat: 35.6833, lng: 140.0333 }};
-        var markerData = [];
+        
         //java変数にphp変数を入れる
         var lat = <?php echo $cnt1a; ?>;
         var lng = <?php echo $cnt2a; ?>;
         var name = <?php echo $cnt3a; ?>;
         var kazu = <?php echo $kazu; ?>;
-    /*    
+        
 // Geolocation APIに対応している
 if( navigator.geolocation ){
 // 現在位置を取得できる場合の処理
@@ -97,6 +97,11 @@ function successFunc( position )
         
         alert(gps_ido);
         alert(gps_keido);
+
+markerData.push({ pos: { lat: position.coords.latitude, lng: position.coords.longitude }, title: "popup-title2", icon: "", infoWindowOpen: false, infoWindowContent: name[i]  });
+
+
+
 }
 // 失敗した時の関数
 function errorFunc( error )
@@ -117,7 +122,7 @@ var optionObj = {
 	"timeout": 8000 ,
 	"maximumAge": 5000 ,} ;
         
-        */
+        
 
        markerData.push({ pos: { lat: 40, lng: 150 }, title: "popup-title2", icon: "", infoWindowOpen: false, infoWindowContent: "<h3>tes</h3><p>piyopiyo</p>" });
        for(var i = 0; i < kazu; i++) {
