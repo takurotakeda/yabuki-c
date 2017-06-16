@@ -60,11 +60,11 @@ body { width: 100%; height: 100%; margin: 0; }
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh-xxyYmMWlyvZElHmfygXIbckJAcW-r8&"></script>
 
 <script type="text/javascript">
-var markerData = [];
+
 (function(){
 	"use strict";
 	var mapData    = { pos: { lat: 35.6833, lng: 140.0333 }};
-        
+        var markerData = [];
         //java変数にphp変数を入れる
         var lat = <?php echo $cnt1a; ?>;
         var lng = <?php echo $cnt2a; ?>;
