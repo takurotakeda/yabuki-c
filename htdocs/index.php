@@ -99,7 +99,6 @@ function successFunc( position )
         alert(gps_keido);
 
 
-markerData.push({ pos: { lat: position.coords.latitude, lng: position.coords.longitude }, title: "popup-title2", icon: "", infoWindowOpen: false, infoWindowContent: name[i]  });
 
 }
 
