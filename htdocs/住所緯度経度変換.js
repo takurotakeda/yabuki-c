@@ -1,4 +1,4 @@
-var geocoder;
+﻿var geocoder;
 var map;
 function initialize() {
  geocoder = new google.maps.Geocoder();
@@ -29,8 +29,8 @@ function codeAddress() {
     position: latlng,map: map
     });
 
-    document.getElementById('id_ido').innerHTML = latlng.lat();
-    document.getElementById('id_keido').innerHTML = latlng.lng();
+    document.getElementById('id_ido').value = latlng.lat();
+    document.getElementById('id_keido').value = latlng.lng();
 
     }
    }
