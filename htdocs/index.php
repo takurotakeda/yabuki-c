@@ -58,29 +58,20 @@ body { width: 100%; height: 100%; margin: 0; }
 <body>    
 <div id="map"></div>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh-xxyYmMWlyvZElHmfygXIbckJAcW-r8&"></script>
-
-<script type="text/javascript">
-
 var markerData = [];
+<script type="text/javascript">
 (function(){
-	"use strict";
-	var mapData    = { pos: { lat: 35.6833, lng: 140.0333 }};
-        
-        //java変数にphp変数を入れる
-        var lat = <?php echo $cnt1a; ?>;
-        var lng = <?php echo $cnt2a; ?>;
-        var name = <?php echo $cnt3a; ?>;
-        var kazu = <?php echo $kazu; ?>;
-        
-// Geolocation APIに対応している
-if( navigator.geolocation ){
-// 現在位置を取得できる場合の処理
-	alert( "あなたの端末では、現在位置を取得することができます。" ) ;}
-
-// Geolocation APIに対応していない
-else{
-// 現在位置を取得できない場合の処理
-	alert( "あなたの端末では、現在位置を取得できません。" ) ;}
+    "use strict";
+    // Geolocation APIに対応している
+    if( navigator.geolocation ){
+        // 現在位置を取得できる場合の処理
+	console.log( "あなたの端末では、現在位置を取得することができます。" ) ;
+    }
+    // Geolocation APIに対応していない
+    else {
+        // 現在位置を取得できない場合の処理
+	alert( "あなたの端末では、現在位置を取得できません。" ) ;
+    }
     
 // 現在位置を取得する
 navigator.geolocation.getCurrentPosition( successFunc , errorFunc , optionObj ) ;
@@ -88,47 +79,28 @@ navigator.geolocation.getCurrentPosition( successFunc , errorFunc , optionObj ) 
 // 成功した時の関数
 function successFunc( position )
 {
-	// 緯度をアラート表示
-	alert( position.coords.latitude ) ;
-
-	// 経度をアラート表示
-	alert( position.coords.longitude ) ;
-        var gps_ido =  ( position.coords.latitude );
-        var gps_keido = ( position.coords.longitude );
-        
-        alert(gps_ido);
-        alert(gps_keido);
-
-
-markerData.push({ pos: { lat: position.coords.latitude, lng: position.coords.longitude }, title: "popup-title2", icon: "", infoWindowOpen: false, infoWindowContent: name[i]  });
-
-}
-
-// 失敗した時の関数
-function errorFunc( error )
-{
-	// エラーコードのメッセージを定義
-	var errorMessage = {
-		0: "原因不明のエラーが発生しました…。" ,
-		1: "位置情報の取得が許可されませんでした…。" ,
-		2: "電波状況などで位置情報が取得できませんでした…。" ,
-		3: "位置情報の取得に時間がかかり過ぎてタイムアウトしました…。" ,
-	} ;
-	// エラーコードに合わせたエラー内容をアラート表示
-	alert( errorMessage[error.code] ) ;
-}
-// オプション・オブジェクト
-var optionObj = {
-	"enableHighAccuracy": false ,
-	"timeout": 8000 ,
-	"maximumAge": 5000 ,} ;
-        
+                var mapData    = { pos: { lat: 35.6833, lng: 140.0333 }};
+                var markerData = [];
+                
+        // 緯度
+	console.log( position.coords.latitude ) ;
+	// 経度
+	console.log( position.coords.longitude ) ;
+        markerData.push({ pos: { lat:position.coords.latitude, lng: position.coords.longitude }, title: "popup-title3", icon: "", infoWindowOpen: false, infoWindowContent: "<h3>AAAAA</h3><p>test</p>"  });
         
 
+        
+        //java変数にphp変数を入れる
+        var lat = <?php echo $cnt1a; ?>;
+        var lng = <?php echo $cnt2a; ?>;
+        var name = <?php echo $cnt3a; ?>;
+        var kazu = <?php echo $kazu; ?>;
+
+       
        markerData.push({ pos: { lat: 40, lng: 150 }, title: "popup-title2", icon: "", infoWindowOpen: false, infoWindowContent: "<h3>tes</h3><p>piyopiyo</p>" });
        for(var i = 0; i < kazu; i++) {
 //parseFlort文字列を数値に変換する
-       markerData.push({ pos: { lat: parseFloat(lat[i]), lng: parseFloat(lng[i]) }, title: "popup-title2", icon: "", infoWindowOpen: false, infoWindowContent: name[i]  });
+         markerData.push({ pos: { lat: parseFloat(lat[i]), lng: parseFloat(lng[i]) }, title: "popup-title2", icon: "", infoWindowOpen: false, infoWindowContent: name[i]  });
        /*
        document.write(lat[i]);
        document.write('<br>');
@@ -142,7 +114,9 @@ var optionObj = {
 		zoom:   15
 	});
 	for( var i=0; i < markerData.length; i++ )
+
 	{ 
+            console.log(markerData[i]);
 		(function(){
 			var marker = new google.maps.Marker({
 				position: markerData[i].pos,
@@ -165,6 +139,26 @@ var optionObj = {
 			}
 		}());
 	}
+}
+
+// 失敗した時の関数
+function errorFunc( error )
+{
+	// エラーコードのメッセージを定義
+	var errorMessage = {
+		0: "原因不明のエラーが発生しました…。" ,
+		1: "位置情報の取得が許可されませんでした…。" ,
+		2: "電波状況などで位置情報が取得できませんでした…。" ,
+		3: "位置情報の取得に時間がかかり過ぎてタイムアウトしました…。" ,
+	} ;
+	// エラーコードに合わせたエラー内容をアラート表示
+	alert( errorMessage[error.code] ) ;
+}
+// オプション・オブジェクト
+var optionObj = {
+	"enableHighAccuracy": false ,
+	"timeout": 8000 ,
+	"maximumAge": 5000 ,} ;
 }());
 </script>
 </body>
