@@ -2,7 +2,9 @@
 <html>
 <head>
 
-<style>
+<title>マップ</title>
+
+ <style>
 /* --- ナビゲーションバー --- */
 div.nav {
 width: 100%; /* ナビゲーションの幅 */
@@ -82,11 +84,15 @@ color: #ffffff; /* 見出しの文字色 */
   </style>
 
 
+ <body>
+
+
+
 
 <div class="nav">
 
 <ul class="nl clearFix">
-<li><a href="#">TOP</a></li>
+<li><a href="hinan.html">TOP</a></li>
 <li class="active"><a href="index.php">マップ</a></li>
 <li><a href="insert.html">避難所追加</a></li>
 <li><a href="twitter.html">災害情報</a></li>
@@ -94,17 +100,10 @@ color: #ffffff; /* 見出しの文字色 */
 
 </div>
 
-<h2>習志野市 避難所一覧マップ</h2>
-<br>
-<br>
+<h2>習志野市の避難所一覧マップ</h2>
 
 
-
-
-
-
-
-
+</body>
 
 
 
@@ -198,7 +197,7 @@ function successFunc( position )
 	console.log( position.coords.latitude ) ;
 	// 経度
 	console.log( position.coords.longitude ) ;
-        markerData.push({ pos: { lat:position.coords.latitude, lng: position.coords.longitude }, title: "popup-title3", icon: "", infoWindowOpen: true, infoWindowContent: "<h3>現在地</h3><p>test</p>"  });
+        markerData.push({ pos: { lat:position.coords.latitude, lng: position.coords.longitude }, title: "popup-title3", icon: "", infoWindowOpen: false, infoWindowContent: "<h3>AAAAA</h3><p>test</p>"  });
         
 
         
