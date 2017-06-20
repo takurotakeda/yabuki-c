@@ -2,7 +2,7 @@
 <html>
 <head>
 
-
+<title>マップ</title>
 
  <style>
 /* --- ナビゲーションバー --- */
