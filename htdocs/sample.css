@@ -1,0 +1,47 @@
+body {
+margin-top: 0px;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 0px;
+}
+
+h1 {
+color: #000000;
+background-color: #6495ED;
+text-align: center;
+}
+
+.container1 {
+margin: 0px auto;
+max-width: 900px;
+}
+
+.content1 {
+border: 2px solid #000000;
+text-align: center;
+height: 800px;
+}
+
+.container2 {
+position: relative;
+top: -50px;
+margin: 70px auto;
+max-width: 300px;
+}
+
+.content2 {
+border: 5px solid #000000;
+text-align: center;
+}
+
+.button1 {
+text-align: left;
+}
+
+.map {
+position: relative;
+top: 30px;
+left: 150px;
+width: 300px;
+height: 300px;
+}
