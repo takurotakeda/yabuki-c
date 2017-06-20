@@ -2,6 +2,118 @@
 <html>
 <head>
 
+<style>
+/* --- ナビゲーションバー --- */
+div.nav {
+width: 100%; /* ナビゲーションの幅 */
+padding-top:  1%; /* ナビゲーションの上パディング */
+background-color: #ffffff; /* ナビゲーションの背景色 */
+font-size: 100%;
+}
+
+/* --- メニューエリア --- */
+div.nav ul.nl {
+width: 100%; /* メニューの幅 */
+margin: 0 auto; /* メニューのマージン（上下、左右） */
+padding: 0;
+list-style-type: none;
+text-align: center;
+}
+
+/* --- メニュー項目 --- */
+div.nav ul.nl li {
+width: 23%; /* タブの幅 */
+margin-right: 1%; /* タブの右マージン */
+background: #f9f9f9  no-repeat left top; /* タブの背景（左） */
+float: left;
+}
+
+/* --- リンク --- */
+div.nav ul.nl li a {
+display: block;
+position: relative; /* IE6用 */
+padding: 6px 2px 5px; /* リンクエリアのパディング（上、左右、下） */
+background:  no-repeat right top; /* タブの背景（右） */
+text-decoration: none; /* テキストの下線（なし） */
+}
+
+/* --- ポイント時の設定 --- */
+div.nav ul.nl li a:hover {
+text-decoration: underline; /* テキストの下線（あり） */
+}
+
+/* --- アクティブなタブ --- */
+div.nav ul.nl li.active {
+background: #004080 no-repeat left top; /* タブの背景（左） */
+}
+
+div.nav ul.nl li.active a {
+background:  no-repeat right top; /* タブの背景（右） */
+color: #ffffff; /* アクティブタブの文字色 */
+}
+
+/* --- clearfix --- */
+.clearFix:after {
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+.clearFix {
+min-height: 1px;
+}
+
+
+/* --- 見出し --- */
+h2 {
+position: relative; /* Netscape7用 */
+margin: 0;
+padding: 10px 10px 10px 28px; /* 見出しのパディング（上右下左） */
+background: #004080  no-repeat 8px; /* 見出しの背景 */
+border-bottom: 1px #002448 solid; /* 見出しの下境界線 */
+font-size: 100%; /* 見出しの文字サイズ */
+color: #ffffff; /* 見出しの文字色 */
+}
+
+
+
+
+  </style>
+
+
+
+<div class="nav">
+
+<ul class="nl clearFix">
+<li><a href="#">TOP</a></li>
+<li class="active"><a href="index.php">マップ</a></li>
+<li><a href="insert.html">避難所追加</a></li>
+<li><a href="twitter.html">災害情報</a></li>
+</ul>
+
+</div>
+
+<h2>日本国内と習志野市の災害情報一覧。(Twitter)</h2>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <?php
 $dbServer = '127.0.0.1';
 $dbUser = $_SERVER['MYSQL_USER'];
