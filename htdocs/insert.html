@@ -84,10 +84,7 @@ color: #ffffff; /* 見出しの文字色 */
 
 
 
-        {
-            margin: 0;
-            padding: 0;
-        }
+
 
         html, body, .form1 {
             width: 100vw;
@@ -107,7 +104,7 @@ color: #ffffff; /* 見出しの文字色 */
             height: 45px;
         }
 
-        input.address {
+        #address {
             min-width: 25vw;
             height: 45px;
         }
@@ -152,7 +149,7 @@ color: #ffffff; /* 見出しの文字色 */
 <body onload="initialize()">
   <form action="insert.php" method="post">
     <input class="hinan"type="text" name="name" placeholder="避難所名を入力してください">
-    <input class="address" type="textbox"" placeholder="住所を入力してください">  
+    <input id="address" type="textbox"" placeholder="住所を入力してください">  
     <input id="id_ido" type="hidden" name="ido" placeholder="緯度を入力してください">
     <input id="id_keido" type="hidden" name="keido" placeholder="経度を入力してください">
     <input class="send" type="button" value="住所検索" onclick="codeAddress()" >     <!-- type="textbox"をjsファイルのcodeAddress()で変換する -->
