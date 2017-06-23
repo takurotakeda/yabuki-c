@@ -1,7 +1,5 @@
 ﻿
-<!DOCTYPE html>
-<head>
-<style>
+
 <?php
 //データベース接続設定
 $dbServer = '127.0.0.1';
@@ -28,6 +26,9 @@ $prepare->execute();
 //echo '<a href="all.php">全件表示</a>';
 echo '<a href="index.php">マップを表示</a>';
 ?>
+<!DOCTYPE html>
+<head>
+<style>
 <div class="form1">
 <p>避難所を追加できました</p>
 </div>
