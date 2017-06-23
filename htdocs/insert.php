@@ -1,4 +1,8 @@
-﻿<?php
+﻿
+<!DOCTYPE html>
+<head>
+<style>
+<?php
 //データベース接続設定
 $dbServer = '127.0.0.1';
 $dbUser = $_SERVER['MYSQL_USER'];
@@ -22,12 +26,9 @@ $prepare->bindValue(':keido', $db_keido, PDO::PARAM_STR);
 $prepare->execute();
 //結果の確認
 //echo '<a href="all.php">全件表示</a>';
-<div class="form1">
-<p>避難所を追加できました</p>
-</div>
 echo '<a href="index.php">マップを表示</a>';
 ?>
-<style>
+
         .form1 {
             display: flex;
             justify-content: center;
@@ -35,3 +36,12 @@ echo '<a href="index.php">マップを表示</a>';
             background-color: white;
         }
 </style>
+</head>
+<body>
+
+<div class="form1">
+<p>避難所を追加できました</p>
+</div>
+
+</body>
+</html>
