@@ -6,42 +6,33 @@ margin-right: 0px;
 }
 
 h1 {
-color: #000000;
-background-color: #6495ED;
+color: white;
+background-color: #004080;
 text-align: center;
 }
 
-.container1 {
-margin: 0px auto;
-max-width: 900px;
-}
 
-.content1 {
-border: 2px solid #000000;
-text-align: center;
-height: 800px;
-}
-
-.container2 {
+.map2 {
 position: relative;
-top: -50px;
-margin: 70px auto;
-max-width: 300px;
+float: left;
+width: 100%;
+height: 100%;
 }
-
-.content2 {
-border: 5px solid #000000;
-text-align: center;
-}
-
-.button1 {
-text-align: left;
-}
-
-.map {
+.school3 {
 position: relative;
-top: 30px;
-left: 150px;
-width: 300px;
-height: 300px;
+float: left;
+width: 100%;
+height: 100%;
 }
+.zishin1 {
+position: relative;
+float: left;
+width: 100%;
+height: 100%;
+}
+
+.a {
+  position: relative;
+  margin: 100px;    
+}
+
