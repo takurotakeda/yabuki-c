@@ -79,6 +79,11 @@ color: #ffffff; /* 見出しの文字色 */
 }
 
 
+map{
+height:80%;
+}
+
+
 
 
   </style>
