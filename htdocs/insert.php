@@ -22,6 +22,16 @@ $prepare->bindValue(':keido', $db_keido, PDO::PARAM_STR);
 $prepare->execute();
 //結果の確認
 //echo '<a href="all.php">全件表示</a>';
+<div class="form1">
+<p>避難所を追加できました</p>
+</div>
 echo '<a href="index.php">マップを表示</a>';
 ?>
-<p>避難所を追加できました</p>
+<style>
+        .form1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+        }
+</style>
