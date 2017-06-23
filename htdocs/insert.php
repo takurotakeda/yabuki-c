@@ -1,6 +1,4 @@
-﻿
-
-<?php
+﻿<?php
 //データベース接続設定
 $dbServer = '127.0.0.1';
 $dbUser = $_SERVER['MYSQL_USER'];
@@ -25,5 +23,6 @@ $prepare->execute();
 //結果の確認
 //echo '<a href="all.php">全件表示</a>';
 echo '<a href="index.php">マップを表示</a>';
-<p>避難所を追加できました</p>
 ?>
+<h1>避難所を追加できました</h1>
+
