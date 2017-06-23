@@ -79,10 +79,6 @@ color: #ffffff; /* 見出しの文字色 */
 }
 
 
-.div map{
-height: 900px;
-}
-
 
 </style>
 
@@ -155,7 +151,7 @@ $cnt3a = json_encode($cnt3);
 <style>
 html { width: 100%; height: 100%; }
 body { width: 100%; height: 100%; margin: 0; }
-#map { width: 100%; height: 100%; }
+#map { width: 100%; height: 80%; }
 </style>
 </head>
 <body>    
