@@ -79,15 +79,15 @@ color: #ffffff; /* 見出しの文字色 */
 }
 
 
-
-  </style>
-
-
- <body>
+.div map{
+height: 900px;
+}
 
 
+</style>
 
 
+<body>
 <div class="nav">
 
 <ul class="nl clearFix">
@@ -103,13 +103,6 @@ color: #ffffff; /* 見出しの文字色 */
 
 
 </body>
-
-
-
-
-
-
-
 
 
 <?php
