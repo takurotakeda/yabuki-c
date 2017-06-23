@@ -24,7 +24,7 @@ text-align: center;
 
 /* --- メニュー項目 --- */
 div.nav ul.nl li {
-width: 23%; /* タブの幅 */
+width: 24%; /* タブの幅 */
 margin-right: 1%; /* タブの右マージン */
 background: #f9f9f9  no-repeat left top; /* タブの背景（左） */
 float: left;
