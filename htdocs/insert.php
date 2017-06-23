@@ -25,5 +25,5 @@ $prepare->execute();
 //結果の確認
 //echo '<a href="all.php">全件表示</a>';
 echo '<a href="index.php">マップを表示</a>';
-?>
 <p>避難所を追加できました</p>
+?>
