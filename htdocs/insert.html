@@ -153,8 +153,8 @@ color: #ffffff; /* 見出しの文字色 */
   <form action="insert.php" method="post">
     <input class="hinan"type="text" name="name" placeholder="避難所名を入力してください">
     <input class="address" type="textbox"" placeholder="住所を入力してください">  
-    <input class="id_ido" type="hidden" name="ido" placeholder="緯度を入力してください">
-    <input class="id_keido" type="hidden" name="keido" placeholder="経度を入力してください">
+    <input id="id_ido" type="hidden" name="ido" placeholder="緯度を入力してください">
+    <input id="id_keido" type="hidden" name="keido" placeholder="経度を入力してください">
     <input class="send" type="button" value="住所検索" onclick="codeAddress()" >     <!-- type="textbox"をjsファイルのcodeAddress()で変換する -->
     <input class="send" type="submit" value="追加" >   <!-- データベースにname,hiddenを追加する-->
 </form>
