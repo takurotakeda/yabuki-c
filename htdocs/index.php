@@ -80,7 +80,6 @@ color: #ffffff; /* 見出しの文字色 */
 
 
 
-
   </style>
 
 
@@ -169,7 +168,7 @@ body { width: 100%; height: 100%; margin: 0; }
 <body>    
 <div id="map"></div>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh-xxyYmMWlyvZElHmfygXIbckJAcW-r8&"></script>
-var markerData = [];
+
 <script type="text/javascript">
 (function(){
     "use strict";
