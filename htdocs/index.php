@@ -185,7 +185,7 @@ function successFunc( position )
 	console.log( position.coords.latitude ) ;
 	// 経度
 	console.log( position.coords.longitude ) ;
-        markerData.push({ pos: { lat:position.coords.latitude, lng: position.coords.longitude }, title: "popup-title3", icon: "", infoWindowOpen: false, infoWindowContent: "<h3>AAAAA</h3><p>test</p>"  });
+        markerData.push({ pos: { lat:position.coords.latitude, lng: position.coords.longitude }, title: "popup-title3", icon: "", infoWindowOpen: true, infoWindowContent: "<h3>現在地</h3><p>現在地です</p>"  });
         
 
         
