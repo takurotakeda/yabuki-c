@@ -26,21 +26,4 @@ $prepare->execute();
 //echo '<a href="all.php">全件表示</a>';
 echo '<a href="index.php">マップを表示</a>';
 ?>
-<!DOCTYPE html>
-<head>
-<style>
-<div class="form1">
 <p>避難所を追加できました</p>
-</div>
-        .form1 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: white;
-        }
-</style>
-</head>
-<body>
-
-</body>
-</html>
