@@ -16,19 +16,16 @@ text-align: center;
 position: relative;
 float: left;
 width: 100%;
-height: 100%;
 }
 .school3 {
 position: relative;
 float: left;
 width: 100%;
-height: 100%;
 }
 .zishin1 {
 position: relative;
 float: left;
 width: 100%;
-height: 100%;
 }
 
 .a {
@@ -36,3 +33,8 @@ height: 100%;
   margin: 100px;    
 }
 
+.img { 
+	max-width: 100%; 
+	height:auto;
+	width:auto;
+}
