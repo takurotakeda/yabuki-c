@@ -24,7 +24,7 @@ text-align: center;
 
 /* --- メニュー項目 --- */
 div.nav ul.nl li {
-width: 23%; /* タブの幅 */
+width: 24%; /* タブの幅 */
 margin-right: 1%; /* タブの右マージン */
 background: #f9f9f9  no-repeat left top; /* タブの背景（左） */
 float: left;
@@ -80,14 +80,10 @@ color: #ffffff; /* 見出しの文字色 */
 
 
 
-  </style>
+</style>
 
 
- <body>
-
-
-
-
+<body>
 <div class="nav">
 
 <ul class="nl clearFix">
@@ -103,13 +99,6 @@ color: #ffffff; /* 見出しの文字色 */
 
 
 </body>
-
-
-
-
-
-
-
 
 
 <?php
@@ -162,7 +151,7 @@ $cnt3a = json_encode($cnt3);
 <style>
 html { width: 100%; height: 100%; }
 body { width: 100%; height: 100%; margin: 0; }
-#map { width: 100%; height: 100%; }
+#map { width: 100%; height: 91%; }
 </style>
 </head>
 <body>    
@@ -196,7 +185,7 @@ function successFunc( position )
 	console.log( position.coords.latitude ) ;
 	// 経度
 	console.log( position.coords.longitude ) ;
-        markerData.push({ pos: { lat:position.coords.latitude, lng: position.coords.longitude }, title: "popup-title3", icon: "", infoWindowOpen: false, infoWindowContent: "<h3>AAAAA</h3><p>test</p>"  });
+        markerData.push({ pos: { lat:position.coords.latitude, lng: position.coords.longitude }, title: "popup-title3", icon: "", infoWindowOpen: true, infoWindowContent: "<h3>現在地</h3><p>現在地です</p>"  });
         
 
         
