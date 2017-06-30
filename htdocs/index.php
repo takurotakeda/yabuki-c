@@ -1,6 +1,8 @@
 ﻿<!DOCTYPE html>
-<html>
+<htmllang="en">
 <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+
 
 <title>マップ</title>
 
@@ -81,7 +83,7 @@ color: #ffffff; /* 見出しの文字色 */
 
 
 </style>
-
+</head>
 
 <body>
 <div class="nav">
