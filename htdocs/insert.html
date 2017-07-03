@@ -1,4 +1,4 @@
-<!DOCTYPE html "-//W3C//DTD XHTML 1.0 Strict//EN" 
+﻿<!DOCTYPE html "-//W3C//DTD XHTML 1.0 Strict//EN" 
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -116,11 +116,21 @@ color: #ffffff; /* 見出しの文字色 */
         input.send1 {
             min-width: 5vw;
             height: 45px;
-
         }
-	.tuika{
+
+	.tuika {
 		text-align: center;
 	}
+
+.test1 {
+position: relative;
+  top: 20px;
+text-align: center;
+color: #brack;
+border: solid black;
+background-color:yellow;
+} 
+
 
 </style>
 
@@ -142,7 +152,6 @@ color: #ffffff; /* 見出しの文字色 */
 </ul>
 
 </div>
-
 <h2>避難所追加画面</h2>
 <br>
 <br>
@@ -164,8 +173,19 @@ color: #ffffff; /* 見出しの文字色 */
 		<input id="id_keido" type="hidden" name="keido" placeholder="経度を入力してください">
 <br><br>
 		<div class="tuika"><input class="send" type="submit" value="追加" ></div>   <!-- データベースにname,hiddenを追加する-->
-	</form>
+<div class="test1">
+<h3>手順</h3>
+<p>1.住所を入力してください</p>
+<p>2.位置特定のボタンを押してください</p>
+<p>3.その場所の避難所名を入力してください</p>
+<p>4.追加ボタンを押してください</p>
+<p>5.「追加しました」と表示されたら成功です</p>
 </div>
+</form>
+</div>
+
+	
+
 
 <div id="map_canvas"></div><!--ジオコーディングは出力しないと使用することができない-->
 
